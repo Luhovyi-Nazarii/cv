@@ -22,6 +22,15 @@ const homeTexts = {
     de: "Luhovyi Nazarii De",
   },
 };
+
+const anotherTexts = {
+  "h1_section-title": {
+    ru: "Луговой Назарий aRu",
+    ua: "Луговий Назарій aUa",
+    en: "Luhovyi Nazarii aEn",
+    de: "Luhovyi Nazarii aDe",
+  },
+};
     
 // console.log(currentPathName);
 

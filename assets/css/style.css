@@ -266,6 +266,10 @@ a:hover {
   margin-right: 16px;
 }
 
+.lang-btn-active {
+  background-color: #A7D8FF;
+}
+
 
 
 /* .nav-lang {

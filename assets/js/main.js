@@ -197,25 +197,20 @@ function checkBrowserLang() {
 // End language
 // Start language select
 
-function select () {
-  let selectHeader = document.querySelectorAll('.container-lang-select-header');
+const menuRoot = document.querySelector('.container-lang-select');
+document.addEventListener('mousedown', (e) => {
+   if (! menuRoot.contains(e.target)) {
+    document.querySelector('.container-lang-select').classList.remove('is-active');
+   }
+})
 
-  selectHeader.forEach(item=>{
-    item.addEventListener('click', function(){
-      this.parentElement.classList.toggle('is-active');
-    })
-  })
+document.querySelector('.container-lang-select-header').addEventListener('click', function () {
+  document.querySelector('.container-lang-select').classList.toggle('is-active');
+})
 
-  let selectBody = document.querySelectorAll('.container-lang-select-body');
-
-  selectBody.forEach(item=>{
-    item.addEventListener('click', function(){
-      this.parentElement.classList.toggle('is-active');
-    })
-  })
-
-};
-select();
+document.querySelector('.container-lang-select-body').addEventListener('click', function () {
+  document.querySelector('.container-lang-select').classList.toggle('is-active');
+})
 
 // End language select
 // Start Fixed Header
@@ -232,6 +227,6 @@ window.onscroll = function showHeader() {
   };
 };
 
-
 // End Fixed Header
+
 })

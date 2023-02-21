@@ -19,7 +19,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   font-family: var(--font-sans-serif);
-  background-color: var(--bg);
   color: var(--text);
   font-size: 16px;
   font-weight: normal;
@@ -56,12 +55,9 @@ a:hover {
   width: 100%;
   height: 80px;
   background: var(--bg-header);
-  /* color: #FFFFFF; */
   font-size: 14px;
   font-weight: 600;
-  /* animation-duration: 2s;
-  animation: 1s; */
-  
+  box-shadow: 0 0 30px rgba(7,51,84,0.17);  
 }
 
 .header_animation {
@@ -71,36 +67,25 @@ a:hover {
 
 .header_fixed {
   position: fixed;
-  /* top: 60px; */
-  /* width: 100%; */
   height: 60px;
-  /* background: var(--bg-header);
-  color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 600; */
   animation-name: show_header;
   animation-duration: 0.5s;
-  /* animation: 1s; */
 }
 
 @keyframes show_header {
   0%{
-    /* opacity: 1; */
     height: 80px;
   }
   100%{
-    /* opacity: 1; */
     height: 60px;
   }
 }
 
 @keyframes remove_header {
   0%{
-    opacity: 1;
     height: 60px;
   }
   100%{
-    opacity: 1;
     height: 80px;
   }
 }
@@ -128,7 +113,6 @@ a:hover {
 
 .container_header {
   display: flex;
-  /* margin: 0 auto; */
   justify-content: space-between;
   height: 100%;
 }
@@ -266,7 +250,6 @@ a:hover {
   border: none;
   background-color: transparent;
   z-index: 2;
-
 }
 
 .header__burger-btn span {
@@ -276,7 +259,6 @@ a:hover {
   background-color: #fff;
   left: 5px;
   transition: transform 0.5s, opacity 0.5s, background-color 0.5s;
-
 }
 
 .header__burger-btn span:nth-child(1) {
@@ -315,6 +297,7 @@ a:hover {
 .wrap_select_lang {
   display: flex;
   align-items: center; 
+  margin-right: 5px;
 }
 
 .container-lang-select {
@@ -322,7 +305,6 @@ a:hover {
   margin: 0 auto;
   position: relative;
   display: flex;
-  /* height: 30px;  */
 }
 
 .container-lang-select::after {
@@ -331,7 +313,7 @@ a:hover {
   border: 5px solid;
   border-color: #20292F transparent  transparent transparent ;
   top: 10px;
-  right: 5px;
+  right: 10px;
 
 }
 
@@ -342,7 +324,6 @@ a:hover {
 .container-lang-select-header {
   width: 100%;
   display: flex;
-  /* border: 1px solid #ccc; */
   cursor: pointer;
 }
 
@@ -354,13 +335,24 @@ a:hover {
   top: 100%;
   border: 1px solid #ccc;
   border-top: 0;
-  /* background-color: #24292F; */
+  background-color: #fff;
+  margin-top: 5px;
 }
 
 .lang-btn-select {
   display: flex;
   cursor: pointer;
   line-height: 24px;
+}
+
+.lang-btn-select > span {
+  font-weight: 700;
+  display: block;
+}
+
+.container-lang-select-current {
+  font-weight: 700;
+  margin-top: 3px;
 }
 
 .lang-btn-select:hover {
@@ -392,7 +384,6 @@ a:hover {
 }
 
 /* End Menu Language */
-
 
 @media (max-width: 900px) {
   .section {

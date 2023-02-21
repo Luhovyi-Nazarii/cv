@@ -20,6 +20,12 @@ const currentPathName = window.location.pathname;
 let currentText = {};
 
 const homeTexts = {
+  "header_cv": {
+    ru: "Резюме",
+    ua: "Резюме",
+    en: "CV",
+    de: "Lebenslauf",
+  },
   "menu_header_profile": {
     ru: "Профиль",
     ua: "Профіль",
@@ -69,10 +75,10 @@ const homeTexts = {
     de: "Kontakte",
   },
   "home_lang-select": {
-    ru: "Ru",
-    ua: "Ua",
-    en: "En",
-    de: "De",
+    ru: "RU",
+    ua: "UA",
+    en: "EN",
+    de: "DE",
   },
   
   "home_h1_section-title": {
@@ -212,7 +218,20 @@ function select () {
 select();
 
 // End language select
+// Start Fixed Header
+
+window.onscroll = function showHeader() {
+  let header = document.querySelector('.header');
+  if(window.pageYOffset > 80) {
+    header.classList.add('header_fixed');
+    header.classList.add('header_animation');
+    // header.classList.remove('header_animation');
+  } else {
+    header.classList.remove('header_fixed');
+    // header.classList.add('header_animation');
+  };
+};
 
 
-
+// End Fixed Header
 })

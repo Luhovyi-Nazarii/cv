@@ -10,11 +10,13 @@
   <link rel="icon" href="./assets/favicon.ico">
 </head>
 <body>
-  <header class="header">
+  <header class="header ">
     <div class="container_header">
       <button class="header__burger-btn" id="burger">
         <span></span><span></span><span></span>
       </button>
+      <div class="cv"><span data-lang="header_cv">CV</span></div>
+      
       <nav class="nav">
         <ul class="nav-list">
           <li class="nav-item"><a href="#profile-navigation" class="nav-link" data-lang="menu_header_profile"></a></li>
@@ -27,19 +29,34 @@
           <li class="nav-item"><a href="#contacts-navigation" class="nav-link" data-lang="menu_header_contacts"></a></li>
           <!-- <li class="nav-item"><a href="/another_page.html" class="nav-link">A</a></li> -->
         </ul>
+        <div class="wrap_select_lang">
+          <div class="container-lang-select">
+            <div class="container-lang-select-header">
+              <div class="flag flag_img" data-lang="home_lang-select-flag"></div>
+              <span class="container-lang-select-current" data-lang="home_lang-select"></span>
+            </div>
+            <div class="container-lang-select-body">
+              <div class="lang-btn-select" data-btn="de">
+                <div class="flag flag_de" data-btn="de"></div>
+                <span data-btn="de">DE</span>
+              </div>
+              <div class="lang-btn-select" data-btn="en">
+                <div class="flag flag_usa" data-btn="en"></div>
+                <span data-btn="en">EN</span>
+              </div>
+              <div class="lang-btn-select" data-btn="ru">
+                <div class="flag flag_ru" data-btn="ru"></div>
+                <span data-btn="ru">RU</span>
+              </div>
+              <div class="lang-btn-select" data-btn="ua">
+                <div class="flag flag_ua" data-btn="ua"></div>
+                <span data-btn="ua">UA</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </nav>
-      <div class="container-lang-select">
-        <div class="container-lang-select-header">
-          <div class="flag flag_img" data-lang="home_lang-select-flag"></div>
-          <span class="container-lang-select-current" data-lang="home_lang-select"></span>
-        </div>
-        <div class="container-lang-select-body">
-          <div class="lang-btn-select" data-btn="de">De</div>
-          <div class="lang-btn-select" data-btn="en">En</div>
-          <div class="lang-btn-select" data-btn="ru">Ru</div>
-          <div class="lang-btn-select" data-btn="ua">Ua</div>
-        </div>
-      </div>
+      
     </div>
   </header>
   <main class="main">

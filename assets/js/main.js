@@ -20,6 +20,54 @@ const currentPathName = window.location.pathname;
 let currentText = {};
 
 const homeTexts = {
+  "menu_header_profile": {
+    ru: "Профиль",
+    ua: "Профіль",
+    en: "Profile",
+    de: "Profil",
+  },
+  "menu_header_about_me": {
+    ru: "Обо мне",
+    ua: "Про мене",
+    en: "About Me",
+    de: "Über mich",
+  },
+  "menu_header_skills": {
+    ru: "Навыки",
+    ua: "Навички",
+    en: "Skills",
+    de: "Fähigkeiten",
+  },
+  "menu_header_code": {
+    ru: "Код",
+    ua: "Код",
+    en: "Code",
+    de: "Code",
+  },
+  "menu_header_education": {
+    ru: "Образование",
+    ua: "Освіта",
+    en: "Education",
+    de: "Ausbildung",
+  },
+  "menu_header_projects": {
+    ru: "Проекты",
+    ua: "Проекти",
+    en: "Projects",
+    de: "Projekte",
+  },
+  "menu_header_languages": {
+    ru: "Языки",
+    ua: "Мови",
+    en: "Languages",
+    de: "Sprachen",
+  },
+  "menu_header_contacts": {
+    ru: "Контакты",
+    ua: "Контакти",
+    en: "Contacts",
+    de: "Kontakte",
+  },
   "home_lang-select": {
     ru: "Ru",
     ua: "Ua",
@@ -28,10 +76,10 @@ const homeTexts = {
   },
   
   "home_h1_section-title": {
-    ru: "Луговой Назарий Ru",
-    ua: "Луговий Назарій Ua",
-    en: "Luhovyi Nazarii En",
-    de: "Luhovyi Nazarii De",
+    ru: "Луговой Назарий",
+    ua: "Луговий Назарій",
+    en: "Luhovyi Nazarii",
+    de: "Luhovyi Nazarii",
   },
 };
 
@@ -44,14 +92,14 @@ const homeFlag = {
   },
 };
 
-const anotherTexts = {
+/* const anotherTexts = {
   "another_h1_section-title": {
     ru: "Луговой Назарий aRu",
     ua: "Луговий Назарій aUa",
     en: "Luhovyi Nazarii aEn",
     de: "Luhovyi Nazarii aDe",
   },
-};
+}; */
 
 function checkPagePathName() {
   switch (currentPathName) {
@@ -75,8 +123,6 @@ function changeLang() {
     const elem1 = document.querySelector('.flag_img');
     if(elem){
       elem.textContent = currentText[key][currentLang];
-      // elem1.style.cssText = homeFlag[key][currentLang];
-      // console.log(anotherTexts[key][currentLang])
     }
   }  
 }
@@ -87,9 +133,7 @@ function changeFlag() {
     const elem = document.querySelector(`[data-lang=${key}]`);
     const elem1 = document.querySelector('.flag_img');
     if(elem){
-      // elem.textContent = currentText[key][currentLang];
       elem1.style.cssText = homeFlag[key][currentLang];
-      // console.log(homeFlag[key][currentLang])
     }
   }  
 }
@@ -125,7 +169,6 @@ function checkActiveLangButton() {
       break;
     case "de":
       document.querySelector('[data-btn="de"]').classList.add('lang-btn-active');
-      // document.querySelector('flag').classList.add('flag_de');
       break;  
     default:
       document.querySelector('[data-btn="de"]').classList.add('lang-btn-active');
@@ -167,6 +210,8 @@ function select () {
 
 };
 select();
+
+// End language select
 
 
 

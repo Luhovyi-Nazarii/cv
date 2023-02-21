@@ -253,23 +253,76 @@ a:hover {
 
 /* Menu Language */
 
-.container-lang {
-  /* border: 1px solid rgb(90, 7, 7); */
+/* .container-lang {
+  
   display: flex;
   align-items: center;
   margin: 0 24px;
 
-}
+} */
 
-.lang-btn {
+/* .lang-btn {
   display: flex;
   margin-right: 16px;
-}
+} */
 
 .lang-btn-active {
   background-color: #A7D8FF;
 }
 
+/* Menu Language select */
+
+.container-lang-select {
+  width: 70px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  /* align-items: center; */
+  height: 20px;
+  margin-top: 20px;
+
+}
+
+.container-lang-select.is-active .container-lang-select-body {
+  display: block;
+}
+
+.container-lang-select-header {
+  width: 100%;
+  display: flex;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  
+}
+
+.container-lang-select-body {
+  position: absolute;
+  display: none;
+  left: 0;
+  right: 0;
+  top: 100%;
+  border: 1px solid #ccc;
+  border-top: 0;
+  background-color: #24292F;
+}
+
+.lang-btn-select {
+  cursor: pointer;
+  line-height: 24px;
+}
+
+.lang-btn-select:hover {
+  background-color: #A7D8FF;
+}
+
+.flag {
+  width: 30px;
+  height: 20px;
+  /* border: 1px solid red; */
+}
+.flag_de {
+  background-image: url("../img/de.jpg");
+}
 
 
 /* .nav-lang {

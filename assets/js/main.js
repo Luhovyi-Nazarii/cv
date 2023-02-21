@@ -20,11 +20,27 @@ const currentPathName = window.location.pathname;
 let currentText = {};
 
 const homeTexts = {
+  "home_lang-select": {
+    ru: "Ru",
+    ua: "Ua",
+    en: "En",
+    de: "De",
+  },
+  
   "home_h1_section-title": {
     ru: "Луговой Назарий Ru",
     ua: "Луговий Назарій Ua",
     en: "Luhovyi Nazarii En",
     de: "Luhovyi Nazarii De",
+  },
+};
+
+const homeFlag = {
+  "home_lang-select-flag": {
+    ru: 'background-image: url("assets/img/ru.jpg");',
+    ua: 'background-image: url("assets/img/ua.jpg");',
+    en: 'background-image: url("assets/img/usa.jpg");',
+    de: 'background-image: url("assets/img/de.jpg");',
   },
 };
 
@@ -56,12 +72,28 @@ checkPagePathName();
 function changeLang() {
   for (const key in currentText) {
     const elem = document.querySelector(`[data-lang=${key}]`);
+    const elem1 = document.querySelector('.flag_img');
     if(elem){
       elem.textContent = currentText[key][currentLang];
+      // elem1.style.cssText = homeFlag[key][currentLang];
+      // console.log(anotherTexts[key][currentLang])
     }
   }  
 }
 changeLang();
+
+function changeFlag() {
+  for (const key in homeFlag) {
+    const elem = document.querySelector(`[data-lang=${key}]`);
+    const elem1 = document.querySelector('.flag_img');
+    if(elem){
+      // elem.textContent = currentText[key][currentLang];
+      elem1.style.cssText = homeFlag[key][currentLang];
+      // console.log(homeFlag[key][currentLang])
+    }
+  }  
+}
+changeFlag();
 
 langButtons.forEach((btn)=>{
   btn.addEventListener('click',(event)=>{
@@ -70,6 +102,7 @@ langButtons.forEach((btn)=>{
     resetActiveClass(langButtons, 'lang-btn-active');
     btn.classList.add('lang-btn-active');
     changeLang();
+    changeFlag();
   });
 });
 
@@ -92,6 +125,7 @@ function checkActiveLangButton() {
       break;
     case "de":
       document.querySelector('[data-btn="de"]').classList.add('lang-btn-active');
+      // document.querySelector('flag').classList.add('flag_de');
       break;  
     default:
       document.querySelector('[data-btn="de"]').classList.add('lang-btn-active');
@@ -112,5 +146,28 @@ function checkBrowserLang() {
 }
 
 // End language
+// Start language select
+
+function select () {
+  let selectHeader = document.querySelectorAll('.container-lang-select-header');
+
+  selectHeader.forEach(item=>{
+    item.addEventListener('click', function(){
+      this.parentElement.classList.toggle('is-active');
+    })
+  })
+
+  let selectBody = document.querySelectorAll('.container-lang-select-body');
+
+  selectBody.forEach(item=>{
+    item.addEventListener('click', function(){
+      this.parentElement.classList.toggle('is-active');
+    })
+  })
+
+};
+select();
+
+
 
 })

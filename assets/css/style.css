@@ -248,11 +248,24 @@ a:hover {
 .footer-bl1, 
 .footer-bl2, 
 .footer-bl3 {
-  width: 200px;
+  width: 33%;
   display: flex;
+  
+}
+
+.footer-bl1 {
+  margin-left: 20px;
+}
+
+.footer-bl2 {
   justify-content: center;
 }
 
+.footer-bl3 {
+  justify-content: end;
+  margin-right: 20px;
+
+}
 
 .logo-github {
   display: flex;

@@ -50,14 +50,14 @@
               <div class="lang-btn-select" data-btn="ua">
                 <div class="flag flag_ua" data-btn="ua"></div>
                 <span data-btn="ua">UA</span>
-              </div>              
+              </div>
             </div>
           </div>
         </div>
       </nav>
     </div>
   </header>
-  <!-- End Header  -->
+  <!-- End Header -->
   <main class="main">
     <div class="margin-nav" id="profile-navigation"></div>
     <!-- Start section Profile -->
@@ -69,7 +69,7 @@
           </div>
           <div class="profile-text">
             <h1 class="section-title" data-lang="home_h1_section-title"></h1>
-            <p>Junior Front End Developer</p>
+            <p data-lang="profession"></p>
           </div>
         </div>
       </div>
@@ -78,15 +78,15 @@
     <!-- Start section Summary -->
     <section class="section">
       <div class="container border_section">
-        <h2 class="section-title" id="summary-navigation">About Me</h2>
-        <p>From 2007 to 2022, I was in charge of a mobile phone repair service center. Created and developed the website of his company <a href="https://gsmrepair.com.ua" target="_blank">gsmrepair.com.ua</a> . Now I want to improve my skills in Front-End development, for general and my own projects.</p>
+        <h2 class="section-title" id="summary-navigation" data-lang="about_me"></h2>
+        <p data-lang="about_me_content">From 2007 to 2022, I was in charge of a mobile phone repair service center. Created and developed the website of his company <a href="https://gsmrepair.com.ua" target="_blank">gsmrepair.com.ua</a> . Now I want to improve my skills in Front-End development, for general and my own projects.</p>
       </div>
     </section>
     <!-- End section Summary -->
     <!-- Start section Skills -->
     <section class="section">
       <div class="container border_section">
-        <h2 class="section-title" id="skills-navigation">Skills</h2>
+        <h2 class="section-title" id="skills-navigation" data-lang="skills"></h2>
         <ul>
           <li>HTML</li>
           <li>CSS/SCSS/SASS</li>
@@ -94,6 +94,7 @@
           <li>Git</li>
           <li>WordPress</li>
           <li>Photoshop</li>
+          <li>Figma</li>
           <li>Microelectronics: soldering, circuitry, firmware nand, eprom</li>
         </ul>
       </div>
@@ -102,7 +103,7 @@
     <!-- Start section Code -->
     <section class="section">
       <div class="container border_section">
-        <h2 class="section-title" id="code-navigation">Example Code</h2>
+        <h2 class="section-title" id="code-navigation" data-lang="example_code"></h2>
         <div class="code">
             <pre>
               <code>
@@ -124,12 +125,11 @@
     <!-- Start section Education -->
     <section class="section">
       <div class="container border_section">
-        <h2 class="section-title" id="education-navigation">Education</h2>
+        <h2 class="section-title" id="education-navigation" data-lang="education"></h2>
         <ul>
-          <li>
-          <b>University:</b> “Kharkiv Polytechnic Institute”, obtained qualification: Specialist Degree, Program Subject Area “Management of organizations and administration”
+          <li data-lang="university">
           </li>
-          <li><b>Courses:</b>
+          <li ><b data-lang="courses">Courses:</b>
             <ul>
               <li>
                 <a href="https://www.htmlacademy.ru" target="_blank">HTML Academy</a>
@@ -146,19 +146,19 @@
     <!-- Start section Experience -->
     <section class="section">
       <div class="container border_section">
-        <h2 class="section-title" id="experience-navigation">Projects (Experience)</h2>
-        <p><a href="https://gsmrepair.com.ua" target="_blank">gsmrepair.com.ua</a> Сreated and worked 2007 - 2022</p>
+        <h2 class="section-title" id="experience-navigation" data-lang="projects"></h2>
+        <p data-lang="projects_content"></p>
       </div>
     </section>
     <!-- End section Experience -->
     <!-- Start section Languages -->
     <section class="section">
       <div class="container border_section">
-        <h2 class="section-title" id="languages-navigation">Languages</h2>
+        <h2 class="section-title" id="languages-navigation" data-lang="languages">Languages</h2>
         <ul>
-          <li>English: A1</li>
-          <li>German: A2</li>
-          <li>Russian and Ukrainian: native speaker</li>
+          <li data-lang="english"></li>
+          <li data-lang="german"></li>
+          <li data-lang="russian_ukrainian">Russian and Ukrainian: native speaker</li>
         </ul>
       </div>
     </section>
@@ -166,10 +166,10 @@
     <!-- Start section Contacts -->
     <section class="section">
       <div class="container border_section">
-        <h2 class="section-title" id="contacts-navigation">Contacts</h2>
+        <h2 class="section-title" id="contacts-navigation" data-lang="contacts"></h2>
         <ul>
-          <li><b>Location:</b> Neuburg, Deutschland</li>
-          <li><b>Phone:</b> +49 151 257-49-811</li>
+          <li data-lang="location"></li>
+          <li><b data-lang="phone"></b> +49 151 257-49-811</li>
           <li><b>Email:</b> luhovyinazarii@gmail.com</li>
           <li><b>GitHub:</b> <a href="https://github.com/Luhovyi-Nazarii" target="_blank">Luhovyi Nazarii</a></li>
           <li><b>Discord:</b> Nazarii#4907</li>
@@ -182,7 +182,7 @@
   <footer class="footer">
       <div class="section-footer">
         <div class="footer-bl1">
-          <p>© 2022 by Luhovyi Nazarii</p>
+          <p>© 2022 - <span data-lang="this_year"></span> <span data-lang="by_luhovyi_nazarii"></span></p>
         </div>
         <div class="footer-bl2">
           <a href="https://github.com/Luhovyi-Nazarii" target="_blank" class="logo-github">

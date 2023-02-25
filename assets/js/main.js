@@ -87,6 +87,114 @@ const homeTexts = {
     en: "Luhovyi Nazarii",
     de: "Luhovyi Nazarii",
   },
+  "profession": {
+    ru: "Младший Front End Разработчик",
+    ua: "Молодший фронтенд розробник",
+    en: "Junior Front End Developer",
+    de: "Junior Frontend-Entwickler",
+  },
+  "about_me": {
+    ru: "Обо мне",
+    ua: "Про мене",
+    en: "About Me",
+    de: "Über mich",
+  },
+  "about_me_content": {
+    ru: 'С 2007 по 2022 год руководил сервисным центром по ремонту мобильных телефонов. Создал и развил сайт своей компании <a href="https://gsmrepair.com.ua" target="_blank">gsmrepair.com.ua</a>. Теперь я хочу улучшить свои навыки в разработке Front-End, для общих и собственных проектов.',
+    ua: 'З 2007 по 2022 рік я керував сервісним центром з ремонту мобільних телефонів. Створив і розвинув сайт своєї компанії <a href="https://gsmrepair.com.ua" target="_blank">gsmrepair.com.ua</a>. Тепер я хочу вдосконалити свої навички у Front-End розробці для загальних і власних проектів.',
+    en: 'From 2007 to 2022, I was in charge of a mobile phone repair service center. Created and developed the website of his company <a href="https://gsmrepair.com.ua" target="_blank">gsmrepair.com.ua</a> . Now I want to improve my skills in Front-End development, for general and my own projects.',
+    de: 'Von 2007 bis 2022 leitete ich ein Servicecenter für Handyreparaturen. Erstellt und entwickelt die Website seiner Firma <a href="https://gsmrepair.com.ua" target="_blank">gsmrepair.com.ua</a>. Jetzt möchte ich meine Fähigkeiten in der Front-End-Entwicklung verbessern, für allgemeine und meine eigenen Projekte.',
+  },
+  "skills": {
+    ru: "Навыки",
+    ua: "Навички",
+    en: "Skills",
+    de: "Fähigkeiten",
+  },
+  "example_code": {
+    ru: "Пример кода",
+    ua: "Приклад коду",
+    en: "Example Code",
+    de: "Beispielcode",
+  },
+  "education": {
+    ru: "Образование",
+    ua: "Освіта",
+    en: "Education",
+    de: "Ausbildung",
+  },
+  "university": {
+    ru: '<b>Университет:</b> «Харьковский политехнический институт», присвоена квалификация: диплом специалиста, предметная область программы «Менеджмент организаций и управление»',
+    ua: '<b>Університет:</b> «Харківський політехнічний інститут», здобуто кваліфікацію «Спеціаліст», предметна галузь програми «Менеджмент організацій та управління»',
+    en: '<b>University:</b> “Kharkiv Polytechnic Institute”, obtained qualification: Specialist Degree, Program Subject Area “Management of organizations and administration”',
+    de: '<b>Universität:</b> „Polytechnisches Institut Charkiw“, erworbene Qualifikation: Fachdiplom, Studienfachbereich „Management von Organisationen und Verwaltung“',
+  },
+  "courses": {
+    ru: 'Курсы:',
+    ua: 'Курси:',
+    en: 'Courses:',
+    de: 'Kurse:',
+  },
+  "projects": {
+    ru: 'Проекты (Опыт)',
+    ua: 'Проекти (Досвід)',
+    en: 'Projects (Experience)',
+    de: 'Projekte (Erfahrung)',
+  },
+  "projects_content": {
+    ru: '<a href="https://gsmrepair.com.ua" target="_blank" >gsmrepair.com.ua</a> Создал и поддерживал 2007 - 2022',
+    ua: '<a href="https://gsmrepair.com.ua" target="_blank" >gsmrepair.com.ua</a> Створив та підтримував 2007 - 2022',
+    en: '<a href="https://gsmrepair.com.ua" target="_blank" >gsmrepair.com.ua</a> Сreated and worked 2007 - 2022',
+    de: '<a href="https://gsmrepair.com.ua" target="_blank" >gsmrepair.com.ua</a> Erstellt und gepflegt 2007 - 2022',
+  },
+  "languages": {
+    ru: 'Языки',
+    ua: 'Мови',
+    en: 'Languages',
+    de: 'Sprachen',
+  },
+  "english": {
+    ru: 'Английский: A1',
+    ua: 'Англійська: A1',
+    en: 'English: A1',
+    de: 'Englisch: A1',
+  },
+  "german": {
+    ru: 'Немецкий: A2',
+    ua: 'Німецький: A2',
+    en: 'German: A2',
+    de: 'Deutsch: A2',
+  },
+  "russian_ukrainian": {
+    ru: 'Русский и украинский: носитель языка',
+    ua: 'Українська та російська мова: носій мови',
+    en: 'Russian and Ukrainian: native speaker',
+    de: 'Russisch und Ukrainisch: Muttersprachler',
+  },
+  "contacts": {
+    ru: 'Контакты',
+    ua: 'Контакти',
+    en: 'Contacts',
+    de: 'Kontakte',
+  },
+  "phone": {
+    ru: 'Телефон:',
+    ua: 'Телефон:',
+    en: 'Phone:',
+    de: 'Telefon:',
+  },
+  "location": {
+    ru: '<b>Расположение:</b> Нойбург 86633, Германия',
+    ua: '<b>Місцезнаходження:</b> Нойбург 86633, Німеччина',
+    en: '<b>Location:</b> Neuburg 86633, Germany',
+    de: '<b>Standort:</b> Neuburg 86633, Deutschland',
+  },
+  "by_luhovyi_nazarii": {
+    ru: 'Луговой Назарий',
+    ua: 'Луговий Назарій',
+    en: 'by Luhovyi Nazarii',
+    de: 'von Luhovyi Nazarii',
+  },
 };
 
 const homeFlag = {
@@ -126,9 +234,10 @@ checkPagePathName();
 function changeLang() {
   for (const key in currentText) {
     const elem = document.querySelector(`[data-lang=${key}]`);
-    const elem1 = document.querySelector('.flag_img');
+    // const elem1 = document.querySelector('.flag_img');
     if(elem){
-      elem.textContent = currentText[key][currentLang];
+      //elem.textContent
+      elem.innerHTML = currentText[key][currentLang];
     }
   }  
 }
@@ -220,13 +329,18 @@ window.onscroll = function showHeader() {
   if(window.pageYOffset > 80) {
     header.classList.add('header_fixed');
     header.classList.add('header_animation');
-    // header.classList.remove('header_animation');
   } else {
     header.classList.remove('header_fixed');
-    // header.classList.add('header_animation');
   };
 };
 
 // End Fixed Header
+// Start this year
+
+let today = new Date();
+let year = today.getFullYear();
+document.querySelector(`[data-lang=this_year]`).innerHTML = year;
+
+// End this year
 
 })

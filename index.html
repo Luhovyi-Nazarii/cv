@@ -10,12 +10,13 @@
   <link rel="icon" href="./assets/favicon.ico">
 </head>
 <body>
-  <header class="header ">
+  <!-- Start Header  -->
+  <header class="header">
     <div class="container_header">
       <button class="header__burger-btn" id="burger">
         <span></span><span></span><span></span>
       </button>
-      <div class="cv"><span data-lang="header_cv">CV</span></div>      
+      <div class="cv"><span data-lang="header_cv">CV</span></div>
       <nav class="nav">
         <ul class="nav-list">
           <li class="nav-item"><a href="#profile-navigation" class="nav-link" data-lang="menu_header_profile"></a></li>
@@ -26,7 +27,6 @@
           <li class="nav-item"><a href="#experience-navigation" class="nav-link" data-lang="menu_header_projects"></a></li>
           <li class="nav-item"><a href="#languages-navigation" class="nav-link" data-lang="menu_header_languages"></a></li>
           <li class="nav-item"><a href="#contacts-navigation" class="nav-link" data-lang="menu_header_contacts"></a></li>
-          <!-- <li class="nav-item"><a href="/another_page.html" class="nav-link">A</a></li> -->
         </ul>
         <div class="wrap_select_lang">
           <div class="container-lang-select">
@@ -54,13 +54,15 @@
             </div>
           </div>
         </div>
-      </nav>      
+      </nav>
     </div>
   </header>
+  <!-- End Header  -->
   <main class="main">
     <div class="margin-nav" id="profile-navigation"></div>
-    <div class="container">
-      <section class="section-profile">
+    <!-- Start section Profile -->
+    <section class="section section-profile">
+      <div class="container">
         <div class="block-profile">
           <div class="avatar">
             <img src="./assets/img/1.jpg" class="avatar-img" alt="my photo">
@@ -70,12 +72,20 @@
             <p>Junior Front End Developer</p>
           </div>
         </div>
-      </section>
-      <section class="section section-summary" >
+      </div>
+    </section>
+    <!-- End section Profile -->
+    <!-- Start section Summary -->
+    <section class="section">
+      <div class="container border_section">
         <h2 class="section-title" id="summary-navigation">About Me</h2>
         <p>From 2007 to 2022, I was in charge of a mobile phone repair service center. Created and developed the website of his company <a href="https://gsmrepair.com.ua" target="_blank">gsmrepair.com.ua</a> . Now I want to improve my skills in Front-End development, for general and my own projects.</p>
-      </section>
-      <section class="section">
+      </div>
+    </section>
+    <!-- End section Summary -->
+    <!-- Start section Skills -->
+    <section class="section">
+      <div class="container border_section">
         <h2 class="section-title" id="skills-navigation">Skills</h2>
         <ul>
           <li>HTML</li>
@@ -86,8 +96,12 @@
           <li>Photoshop</li>
           <li>Microelectronics: soldering, circuitry, firmware nand, eprom</li>
         </ul>
-      </section>
-      <section class="section">
+      </div>
+    </section>
+    <!-- End section Skills -->
+    <!-- Start section Code -->
+    <section class="section">
+      <div class="container border_section">
         <h2 class="section-title" id="code-navigation">Example Code</h2>
         <div class="code">
             <pre>
@@ -104,8 +118,12 @@
             </code>
           </pre>
         </div>
-      </section>
-      <section class="section">
+      </div>
+    </section>
+    <!-- End section Code -->
+    <!-- Start section Education -->
+    <section class="section">
+      <div class="container border_section">
         <h2 class="section-title" id="education-navigation">Education</h2>
         <ul>
           <li>
@@ -122,20 +140,32 @@
             </ul>
           </li>
         </ul>
-      </section>
-      <section class="section">
+      </div>
+    </section>
+    <!-- End section Education -->
+    <!-- Start section Experience -->
+    <section class="section">
+      <div class="container border_section">
         <h2 class="section-title" id="experience-navigation">Projects (Experience)</h2>
         <p><a href="https://gsmrepair.com.ua" target="_blank">gsmrepair.com.ua</a> Сreated and worked 2007 - 2022</p>
-      </section>
-      <section class="section">
+      </div>
+    </section>
+    <!-- End section Experience -->
+    <!-- Start section Languages -->
+    <section class="section">
+      <div class="container border_section">
         <h2 class="section-title" id="languages-navigation">Languages</h2>
         <ul>
           <li>English: A1</li>
           <li>German: A2</li>
           <li>Russian and Ukrainian: native speaker</li>
         </ul>
-      </section>
-      <section class="section">
+      </div>
+    </section>
+    <!-- End section Languages -->
+    <!-- Start section Contacts -->
+    <section class="section">
+      <div class="container border_section">
         <h2 class="section-title" id="contacts-navigation">Contacts</h2>
         <ul>
           <li><b>Location:</b> Neuburg, Deutschland</li>
@@ -144,11 +174,12 @@
           <li><b>GitHub:</b> <a href="https://github.com/Luhovyi-Nazarii" target="_blank">Luhovyi Nazarii</a></li>
           <li><b>Discord:</b> Nazarii#4907</li>
         </ul>
-      </section>
-    </div>
+      </div>
+    </section>
+    <!-- End section Contacts -->
   </main>
+  <!-- Start footer -->
   <footer class="footer">
-    <div class="container">
       <div class="section-footer">
         <div class="footer-bl1">
           <p>© 2022 by Luhovyi Nazarii</p>
@@ -163,8 +194,8 @@
           <a href="https://rs.school/js/"><img src="./assets/img/rs_school_js.svg" class="logo-rsschool" width="100" alt="RS School"></a>
         </div>
       </div>
-    </div>
   </footer>
+  <!-- End footer -->
   <script src="./assets/js/main.js"></script>
 </body>
 </html>

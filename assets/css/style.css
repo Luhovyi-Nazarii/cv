@@ -70,6 +70,13 @@ a:hover {
   box-shadow: 0 0 30px rgba(7,51,84,0.17);  
 }
 
+.cont_right_block_header {
+  display: flex;
+  /* width: 100%; */
+  /* justify-content: flex-end; */
+  margin-right: 40px;
+}
+
 .header_animation {
   animation-name: remove_header;
   animation-duration: 0.5s;
@@ -286,8 +293,13 @@ a:hover {
 
 /* Menu burger */
 
-.header__burger-btn {
+.header_cont__burger-btn {
   display: none;
+
+}
+
+.header__burger-btn {
+  
   position: relative;
   width: 40px;
   height: 40px;
@@ -300,7 +312,7 @@ a:hover {
   position: absolute;
   width: 30px;
   height: 3px;
-  background-color: #fff;
+  background-color: #24292F;
   left: 5px;
   transition: transform 0.5s, opacity 0.5s, background-color 0.5s;
 }
@@ -445,6 +457,11 @@ a:hover {
   
   .code {
     margin: 0 10px;
+  }
+
+  .header_cont__burger-btn {
+    display: flex;
+    align-items: center;
   }
 
   .header__burger-btn {

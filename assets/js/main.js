@@ -3,10 +3,12 @@ document.addEventListener('DOMContentLoaded', function() {
 // Start Burger menu
 
 document.getElementById('burger').addEventListener('click', function () {
-  document.querySelector('header').classList.toggle('open');   
-})
-document.querySelector('.nav-list').addEventListener('click', function () {
   document.querySelector('header').classList.toggle('open');
+  document.querySelector('body').classList.toggle('body_open');
+})
+document.querySelector('.nav').addEventListener('click', function () {
+  document.querySelector('header').classList.toggle('open');
+  document.querySelector('body').classList.toggle('body_open');
 })
 
 // End Burger menu

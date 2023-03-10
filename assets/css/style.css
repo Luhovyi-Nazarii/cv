@@ -206,16 +206,7 @@ a:hover {
 .section-profile{
   flex-direction: column;
   align-items: center;
-  /* background-image: linear-gradient(160deg,#003bde 0%,#58d0ff 100%); */
-  /* margin-bottom: -60px; */
 }
-
-/* .profile_bottom {
-  width: 100%;
-  height: 100px;
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNmZmZmZmYiPjxwYXRoIGQ9Ik0xMDkzLjQ4IDEzMS44NUwxNzMgOTRhNzYuODUgNzYuODUgMCAwIDEtMzYuNzktMTEuNDZMMCAwdjE0MGgxMjgwVjBsLTEzMS44MSAxMTEuNjhjLTE2LjQ3IDEzLjk2LTM1LjQ3IDIwLjk2LTU0LjcxIDIwLjE3eiIvPjwvZz48L3N2Zz4=);
-  border: 1px solid #4a5e72;
-} */
 
 .block-profile {
   display: flex;
@@ -493,14 +484,14 @@ a:hover {
 
 
 
-  /* .section {
+  .container {
     margin: 5px 5px;
     padding: 20px 10px;
-  } */
-  
-  h2 {
-    margin-left: 20px;
   }
+  
+  /* h2 {
+    margin-left: 20px;
+  } */
   
   .section li {
     margin-left: -20px;

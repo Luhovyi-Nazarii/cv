@@ -282,6 +282,8 @@ a:hover {
 
 .footer-bl2 {
   justify-content: center;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .footer-bl3 {
@@ -548,15 +550,20 @@ a:hover {
 }
 
 @media (max-width: 500px) {
-  .section-profile {
-    margin: 0px 24px 30px 30px;
-  }
 
   .profile-text .section-title {
     font-size: 24px;
   }
   .profile-text p {
     font-size: 18px;
+  }
+
+  .section-footer {
+    margin: 0 0;
+  }
+
+  .footer-bl1 p {
+    font-size: 14px
   }
 }
 
